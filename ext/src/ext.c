@@ -1,10 +1,12 @@
+#ifndef STRIP_PYTHON
+
 #include <Python.h>
+#include "main.h"
 
 // A test function
-static PyObject *ext_test(PyObject *self, PyObject *args)
+static PyObject* ext_test(PyObject *self, PyObject *args)
 {
-    return PyUnicode_FromString("I am inside C");
-    // return PyLong_FromLong(200);
+    return PyUnicode_FromString(testFunc());
 }
 
 // Method-table
@@ -28,3 +30,5 @@ PyInit_ext(void)
 {
     return PyModule_Create(&extmodule);
 }
+
+#endif

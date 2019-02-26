@@ -1,7 +1,9 @@
 from distutils.core import setup, Extension
+
 from glob import glob
 
 ext = Extension('ext',
+                language="c",
                 sources = glob('./ext/src/**.c', recursive=True))
 
 setup(name = "ext",
