@@ -1,0 +1,8 @@
+README.md
+setup.py
+./ext/src/ext.c
+./ext/src/main.c
+ext.egg-info/PKG-INFO
+ext.egg-info/SOURCES.txt
+ext.egg-info/dependency_links.txt
+ext.egg-info/top_level.txt
