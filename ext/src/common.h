@@ -2,9 +2,9 @@
     #if defined(_MSC_VER)
         // Windows
         #ifdef EXT_SO
-            #define EXT_API __declspec(export)
+            #define EXT_API __declspec(dllexport)
         #else
-            #define EXT_API __declspec(import)
+            #define EXT_API __declspec(dllimport)
         #endif
 
     #elif defined(__GNUC__)

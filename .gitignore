@@ -1,2 +1,8 @@
 build/
 ext.egg-info/
+.vs/
+
+*.sln
+*.vcxproj*
+Makefile
+*.make

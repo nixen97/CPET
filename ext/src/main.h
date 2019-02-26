@@ -3,7 +3,6 @@
 
 #include "common.h"
 
-// Needs to be exported when not compiling for python
-const char* testFunc(void);
+EXT_API const char* testFunc(void);
 
 #endif
