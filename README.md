@@ -1,4 +1,4 @@
-# CPET  [![Build Status](https://jocani.dk/buildStatus/icon?job=CPET%2Fmaster)](https://jocani.dk/job/CPET/job/master/)
+# CPET  [![Build Status](https://jocani.dk/buildStatus/icon?job=CPET%2Fmaster)](https://jocani.dk/job/CPET/job/master/)   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nixen97/CPET.svg)
 C-based python extension template
 
 # Usage
