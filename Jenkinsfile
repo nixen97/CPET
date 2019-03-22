@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'genProject.sh'
+                sh './genProject.sh'
                 sh 'cd ext && make'
             }
         }
@@ -12,12 +12,6 @@ pipeline {
             steps {
                 sh './build/test/bin/Test'
             }
-        }
-    }
-    post {
-        always {
-        sh '/opt/anaconda/bin/nosetests --cover-branches --with-coverage --cover-erase --cover-package=src tests/test.py --cover-xml'
-        cobertura coberturaReportFile: 'coverage.xml'
         }
     }
 }
